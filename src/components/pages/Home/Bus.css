@@ -1,0 +1,66 @@
+/* flex justify-evenly items-center content-center  content-between  */
+.partnersBox{
+    /* display: grid; */
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr); */
+    align-content: space-between;
+
+}
+.patnersIcon{
+    font-size: 130px;
+    color: blue;
+
+
+}
+.Titles{
+    padding: 10px;
+    text-align: center;
+    font-size: 90px;
+}
+.divv{
+    background-color: rgb(246, 238, 238);
+}
+.purcheDiv{
+    width: 100%;
+    background-color: rgb(224, 214, 214);
+    /* border: 2px solid slategray; */
+    border-top: none;
+}
+.fullDiv{
+    border: 2px solid slategray;
+    border-bottom: none;
+}
+.titleName{
+    font-size: 25px;
+    font-weight: bold;
+    /* background-color: black; */
+}
+.min{
+    font-size: 22px;
+    color: darkred;
+}
+.max{
+    font-size: 22px;
+    color: darkred;
+}
+.contactBTN{
+    background-color: crimson;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.contactBTN:hover{
+    background-color: rgb(237, 108, 22);
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.imagess{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin: 10px;
+}
+.newdiv{
+    background-color: rgb(232, 243, 242);
+}
