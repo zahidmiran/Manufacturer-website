@@ -7,13 +7,13 @@ import ReactSpinner from '../../../Sheared/ReactSpinner';
 import CheckoutForm from './CheckoutForm';
 
 
-const stripePromise = loadStripe('pk_test_51L0l3aDIahaKXnTeiATjHgffljac8OyDTEMyVn0KIsKESv0LjifHOm5c2Y8vcXyhHSvzEZB265lqIC87Cgij288F00cYoKwWBs');
+const stripePromise = loadStripe('pk_test_51L3j4dCDkSqcC7zUeqBcRzewMf1jmxGimQf75NHeBjlRipVMDqXFWzdC63cn8z8mjbuJPsVuWKwjgJHFmQdi6MLR003EhBmPVP');
 
 
 const PaymentOrder = () => {
     const { id } = useParams();
 
-    const url = `https://safe-falls-41750.herokuapp.com/purchase/${id}`;
+    const url = `http://localhost:5000/purchase/${id}`;
 
     const { data: data, isLoading, refetch } = useQuery(['purchase', id], () => fetch(url, {
         method: 'GET',

@@ -9,7 +9,7 @@ const ManageOrders = () => {
     const [deletOrder, setDeletOrder] = useState(null);
 
     const { data: allPurchases, isLoading, refetch } = useQuery('allPurchases', () =>
-        fetch('https://safe-falls-41750.herokuapp.com/allPurchases').then(res =>
+        fetch('http://localhost:5000/allPurchases').then(res =>
             res.json())
     )
     if (isLoading) {

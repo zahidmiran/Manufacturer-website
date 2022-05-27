@@ -15,7 +15,7 @@ const CheckoutForm = ({ data, refetch }) => {
     console.log(price)
 
     useEffect(() => {
-        fetch('https://safe-falls-41750.herokuapp.com/create-payment-intent', {
+        fetch('http://localhost:5000/create-payment-intent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -86,7 +86,7 @@ const CheckoutForm = ({ data, refetch }) => {
                 transactionId: paymentIntent.id,
             }
             // update payment to backend // store payment on database
-            fetch(`https://safe-falls-41750.herokuapp.com/purchase/${_id}`, {
+            fetch(`http://localhost:5000/purchase/${_id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',

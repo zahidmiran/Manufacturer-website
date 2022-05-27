@@ -17,7 +17,7 @@ const MyOrders = () => {
     const navigate = useNavigate();
 
     
-    const { data: services, isLoading, refetch } = useQuery(['orders', userEmail], () => fetch(`https://safe-falls-41750.herokuapp.com/orders?userEmail=${user?.email}`, {
+    const { data: services, isLoading, refetch } = useQuery(['orders', userEmail], () => fetch(`http://localhost:5000/orders?userEmail=${user?.email}`, {
         method: 'GET',
         headers: {
             'authorization': `Bearer ${localStorage.getItem('accessToken')}`
