@@ -5,7 +5,7 @@ import ManageAllTools from './ManageAllTools';
 import './ManageTools.css'
 
 const ManageProducts = () => {
-    const { data: tools, isLoading, refetch } = useQuery('allParts', () => fetch(`http://localhost:5000/allParts`, {
+    const { data: tools, isLoading, refetch } = useQuery('allParts', () => fetch(`https://stark-retreat-48209.herokuapp.com/allParts`, {
         method: 'GET',
         headers: {
             'authorization': `Bearer ${localStorage.getItem('accessToken')}`

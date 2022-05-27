@@ -6,7 +6,7 @@ import PurchaseSingle from './PurchaseSingle';
 const PartsAll = () => {
     
     const { data: allParts, isLoading, refetch } = useQuery('allParts', () =>
-     fetch('http://localhost:5000/allParts').then(res =>
+     fetch('https://stark-retreat-48209.herokuapp.com/allParts').then(res =>
        res.json())
    )
    if(isLoading){

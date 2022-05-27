@@ -15,7 +15,7 @@ const CheckoutForm = ({ data, refetch }) => {
     console.log(price)
 
     useEffect(() => {
-        fetch('http://localhost:5000/create-payment-intent', {
+        fetch('https://stark-retreat-48209.herokuapp.com/create-payment-intent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -86,7 +86,7 @@ const CheckoutForm = ({ data, refetch }) => {
                 transactionId: paymentIntent.id,
             }
             // update payment to backend // store payment on database
-            fetch(`http://localhost:5000/purchase/${_id}`, {
+            fetch(`https://stark-retreat-48209.herokuapp.com/purchase/${_id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',

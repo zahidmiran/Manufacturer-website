@@ -16,7 +16,7 @@ const Purchase = () => {
 
     const { partsId } = useParams();
 
-    const url = `http://localhost:5000/part/${partsId}`
+    const url = `https://stark-retreat-48209.herokuapp.com/part/${partsId}`
     const { data: partsInfo, isLoading, refetch } = useQuery(['part', partsId], () => fetch(url, {
         method: 'GET',
         headers: {
@@ -63,7 +63,7 @@ const Purchase = () => {
                 text: 'You Have to Select Quantity More the Minimum Quantity ?? and Higher Then Available Quantity',
               })
         }
-            fetch('http://localhost:5000/purchase', {
+            fetch('https://stark-retreat-48209.herokuapp.com/purchase', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json; charset=UTF-8',
@@ -84,7 +84,7 @@ const Purchase = () => {
                     refetch();
 
                         /* ------- put new quantity on the Home page */
-                            fetch(`http://localhost:5000/changeQty/${partsId}`, {
+                            fetch(`https://stark-retreat-48209.herokuapp.com/changeQty/${partsId}`, {
                             method: 'PUT',
                             headers: {
                                 authorization: `Bearer ${localStorage.getItem('accessToken')}`,

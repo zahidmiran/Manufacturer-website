@@ -13,7 +13,7 @@ const Footer = () => {
             <footer class="footer px-10 py-14 bg-base-200 text-base-content">
                 <div>
                     <Link to='/'><FcShop className='iconss' /></Link>
-                    <p>RIPARA<br />ALL TOOLS AND PARTS <br /> SOLUTION IN ENTIRE PLANET</p>
+                    <p>Tools BD..<br />ALL TOOLS AND PARTS <br /> SOLUTION FOR PC</p>
                 </div>
                 <div>
                     <span class="footer-title">Information</span>

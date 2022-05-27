@@ -17,7 +17,7 @@ const OrderRow = ({ order, index, setDeletOrder, refetch }) => {
           confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
           if (result.isConfirmed) {
-            fetch(`http://localhost:5000/orders/${order._id}`, {
+            fetch(`https://stark-retreat-48209.herokuapp.com/orders/${order._id}`, {
                 method: 'DELETE',
               headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

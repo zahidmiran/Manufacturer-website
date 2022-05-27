@@ -15,7 +15,7 @@ const AddProduct = ({ inputs, title }) => {
 
   const onSubmit = async data => {
     const newDoc = {...data, image:imageUrl}
-    fetch('http://localhost:5000/addParts',{
+    fetch('https://stark-retreat-48209.herokuapp.com/addParts',{
                     method: 'POST',
                     headers:{
                         'content-type':'application/json',

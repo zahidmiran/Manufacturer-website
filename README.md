@@ -1,12 +1,12 @@
 # Project Name:
-RIPARA || CARS TOOLS AND PART SOLUATION..
+Tools BD.. || All Kinds of pc Components..
 
 # Website:
-https://manufacturer-web-ff277.web.app/
+https://manufacturer-web-a069d.web.app/
 
 
 ### Server Side Link:
-https://safe-falls-41750.herokuapp.com/
+https://stark-retreat-48209.herokuapp.com/
 
 
 
@@ -38,7 +38,3 @@ https://safe-falls-41750.herokuapp.com/
 
 • Deploy Tools : Firebase, Heroku, Github.
 
-
-![image](https://i.ibb.co/GtxDdKB/afdsa.jpg)
-![image](https://i.ibb.co/M2kzv48/asfas.jpg)
-![image](https://i.ibb.co/hXKtdzk/afsf.jpg)

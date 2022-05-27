@@ -6,7 +6,7 @@ import { FaTrashAlt } from "react-icons/fa";
 const AdminUserRow = ({ user, index, refetch }) => {
     const { email, role } = user;
     const makeAdmin = () =>{
-          fetch(`http://localhost:5000/users/admin/${email}`,{
+          fetch(`https://stark-retreat-48209.herokuapp.com/users/admin/${email}`,{
               method:'PUT',
               headers:{
                   authorization:`Bearer ${localStorage.getItem('accessToken')}`
@@ -45,7 +45,7 @@ const AdminUserRow = ({ user, index, refetch }) => {
           confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
           if (result.isConfirmed) {
-            fetch(`http://localhost:5000/user/${user._id}`, {
+            fetch(`https://stark-retreat-48209.herokuapp.com/user/${user._id}`, {
               method: 'DELETE',
               headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`
